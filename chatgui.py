@@ -56,9 +56,7 @@ def getResponse(ints, intents_json):
     list_of_intents = intents_json['intents']
     for i in list_of_intents:
         if(i['tag'] == tag):
-            result = random.choice(i['responses'])
-            break
-    return result
+            return random.choice(i['responses'])
 
 
 def chatbot_response(msg):
